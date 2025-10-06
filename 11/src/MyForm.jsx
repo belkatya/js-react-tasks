@@ -41,7 +41,7 @@ export default class MyForm extends React.Component {
                     <button type="button" className="btn btn-primary" onClick={this.handleBack}>
                         Back
                     </button>
-                    <table class="table">
+                    <table className="table">
                         <tbody>
                         <tr>
                             <td>acceptRules</td>
@@ -77,7 +77,7 @@ export default class MyForm extends React.Component {
         return(
             <form name="myForm" onSubmit={this.handleSubmit}> 
                 <div className="col-md-6 mb-3">
-                    <label for="email" className="col-form-label">Email</label>
+                    <label htmlFor="email" className="col-form-label">Email</label>
                     <input
                     type="email"
                     name="email"
@@ -89,7 +89,7 @@ export default class MyForm extends React.Component {
                     />
                 </div>
                 <div className="col-md-6 mb-3">
-                    <label for="password" className="col-form-label">Password</label>
+                    <label htmlFor="password" className="col-form-label">Password</label>
                     <input
                     type="password"
                     name="password"
@@ -101,7 +101,7 @@ export default class MyForm extends React.Component {
                     />
                 </div>
                 <div className="col-md-6 mb-3">
-                    <label for="address" className="col-form-label">Address</label>
+                    <label htmlFor="address" className="col-form-label">Address</label>
                     <textarea
                     type="text"
                     className="form-control"
@@ -113,11 +113,11 @@ export default class MyForm extends React.Component {
                     ></textarea>
                 </div>
                 <div className="col-md-6 mb-3">
-                    <label for="city" className="col-form-label">City</label>
+                    <label htmlFor="city" className="col-form-label">City</label>
                     <input type="text" className="form-control" name="city" id="city" value={city} onChange={(e) => this.handleChange("city", e)}/>
                 </div>
                 <div className="col-md-6 mb-3">
-                    <label for="country" className="col-form-label">Country</label>
+                    <label htmlFor="country" className="col-form-label">Country</label>
                     <select id="country" name="country" className="form-control" value={country} onChange={(e) => this.handleChange("country", e)}>
                     <option value="">Choose</option>
                     <option value="argentina">Argentina</option>
@@ -127,7 +127,7 @@ export default class MyForm extends React.Component {
                 </div>
                 <div className="col-md-6 mb-3">
                     <div className="form-check">
-                    <label className="form-check-label" for="rules">
+                    <label className="form-check-label" htmlFor="rules">
                         <input
                         id="rules"
                         type="checkbox"
